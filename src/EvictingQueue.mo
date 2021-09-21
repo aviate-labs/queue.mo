@@ -28,6 +28,14 @@ module {
             q := q_; v;
         };
 
+        // Execute the given function on the underlying queue.
+        // WARNING: Use at own risk.
+        //          If the limit is exceeded, elements will get removed.
+        public func custom(f : (Queue.Queue<V>) -> Queue.Queue<V>) {
+            q := f(q);
+            while (n < size()) { ignore pop(); };
+        };
+
         // Returns the values of the queue.
         public func vals() : Iter.Iter<V> {
             let (i_, o_) = q;
