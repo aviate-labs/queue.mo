@@ -1,5 +1,5 @@
-import Iter "mo:base/Iter";
-import List "mo:base/List";
+import Iter "mo:base-0.7.3/Iter";
+import List "mo:base-0.7.3/List";
 
 import Queue "../src/Queue";
 import EQueue "../src/EvictingQueue";

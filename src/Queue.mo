@@ -1,4 +1,4 @@
-import List "mo:base/List";
+import List "mo:base-0.7.3/List";
 
 module {
     // A simple FIFO queue.
